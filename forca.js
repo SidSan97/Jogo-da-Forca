@@ -91,14 +91,14 @@ function sorteio()
 {
     var djc = "<table cellpadding=2  ";
         djc = djc + "cellspacing=4 border=0 width=390 ";
-        djc = djc + " height=40 bgcolor=#000000 style='border: ";
-        djc = djc + " 1px solid #666666;'><tr>";
+        djc = djc + " height=40 bgcolor=white style='border: ";  //tela de letras
+        djc = djc + " 1px solid #666666; border-radius: 5px;'><tr>";
 
     for(k = 0; k < palavras[iconte].length; k++)
     {
    		p[k] = k;
 		  djc = djc + "<td style='border: 0px solid #000000;' ";
-      djc = djc + " bgcolor=#000000 align=center ";
+      djc = djc + " bgcolor=white align=center "; //tela de letras
       djc = djc + " valign=middle class=visao> __ </td>";
 	  }
       djc = djc + "</tr></table><br>";

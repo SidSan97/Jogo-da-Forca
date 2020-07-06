@@ -10,13 +10,14 @@
  	color:#000000;
 	font-weight:bold; 
 	text-decoration : none;
-	border: #FF0000 1px solid;
+	border: #23afa8 1px solid;
+	border-radius: 3px;
 }
 .visao {
 	font-size: 16px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color:#FF0000;
- 	color:#FF0000;
+ 	color:#23afa8;
 	font-weight:bold;
 	text-decoration : none;
 }
