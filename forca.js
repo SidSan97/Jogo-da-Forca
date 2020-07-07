@@ -47,12 +47,12 @@ var y =0;
 
 	// Variaveis GLOBAIS
     var  k;
-    var iconte = Math.floor(Math.random()*2);
+    //var iconte = Math.floor(Math.random()*2);
     var dj  = document.getElementById('jg');
     var dicas = document.getElementById('dicas');
     var erro = 1;
     var d = "<pre><font class=gameover>";
-    var iconte = Math.floor(Math.random()*7);
+    var iconte = Math.floor(Math.random()*22);
     var ki = new Array(palavras[iconte].length);
     var kk = new Array(dica[iconte])
       // adicinando adicionar o valor "__" 
