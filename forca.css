@@ -4,9 +4,9 @@
 }
 
 .fundo {
-    background-image: url('imagens/fundo1.jpg');
+   /* background-image: url('imagens/fundo1.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
     bottom: 0;
     color: rgb(255, 255, 255);
     left: 0;
@@ -54,3 +54,330 @@
     font-weight: bold;
     text-decoration: none;
 }
+
+#DIVCORPO {
+   /* display: block;*/
+    position: fixed;
+    width: 85%;
+    height: 50%;
+    right: 7.5%;
+    top: 5%;
+    padding: 15px 0px 0px 15px;
+    border: 1px ridge black;
+    border-radius: 8px;
+ }
+ 
+ #ROSTO {
+    /*display: none;*/
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    font-size: 12px;
+    text-shadow: 0px 0px 1px #F00;
+    position: relative;
+    left: 0.5px;
+    top: -16px;
+ }
+ 
+ #CHAPEU {
+    /*display: none;*/
+    width: 19.2px;
+    height: 12.8px;
+    background-color: black;
+    position: absolute;
+    left: 73.4px;
+    top: 22px;
+    border-radius: 12.5px;
+ }
+ 
+ #ABA {
+    /*display: none;*/
+    width: 32px;
+    height: 3.2px;
+    background-color: black;
+    position: relative;
+    left: -3.5px;
+    top: 0px;
+    border-radius: 12px;
+ }
+ 
+ #CABECA {
+    /*display: none;*/
+    width: 25.6px;
+    height: 26.4px;
+    background-color: #FFCCCC;
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    padding: 0px;
+    border-radius: 25px;
+ }
+ 
+ #PESCOCO {
+    /*display: none;*/
+    width: 11.2px;
+    height: 8px;
+    background-color: #FFCCCC;
+    position: absolute;
+    left: 7px;
+    top: 26px;
+    border-radius: 2px;
+ }
+ 
+ #BOCA { 
+    /*display: none;*/
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    left: 7.8px;
+    top: -40px;
+    box-shadow: 0px 1px 0px 0px red;
+ }
+ 
+ #QUEIXO { 
+    /*display: none;*/
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    position: absolute;
+    left: 13px;
+    top: 25px;
+    box-shadow: 0px 0px 2px 1px red;
+ }
+ 
+ #TRONCO {
+    /*display: none;*/
+    width: 32px;
+    height: 48px;
+    background-color: blue;
+    position: absolute;
+    left: 66.5px;
+    top: 57px;
+    border-radius: 50% / 40% 40% 8% 8%;
+ }
+ 
+ #BRACOD1 {
+   /* display: none;*/
+    width: 12px;
+    height: 35px;
+    background-color: blue;    
+    position: absolute;
+    left: -10px;
+    top: -2px;
+    border-radius: 10px;
+    /* Rotate div */
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+ }
+ 
+ #BRACOD2 {
+/*    display: none;*/
+    width: 10px;
+    height: 30px;
+    background-color: #FFCCCC;    
+    position: relative;
+    left: -8px;
+    top: 26px;
+    border-radius: 10px;
+    /* Rotate div */
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+ }
+ 
+ #MAOD {
+   /* display: none;*/
+    width: 16px;
+    height: 16px;
+    background-color: black;    
+    position: absolute;
+    right: -2px;
+    bottom: -5px;    
+    border-radius: 12.5px;
+ }
+ 
+ #BRACOE1 {
+    /*display: none;*/
+    width: 12px;
+    height: 35px;
+    background-color: blue;    
+    position: absolute;
+    right: -10px;
+    top: -2px;    
+    border-radius: 10px;
+    /* Rotate div */
+    -ms-transform: rotate(135deg); /* IE 9 */
+    -webkit-transform: rotate(135deg); /* Chrome, Safari, Opera */
+    transform: rotate(135deg);
+ }
+ 
+ #BRACOE2 {
+    /*display: none;*/
+    width: 10px;
+    height: 30px;
+    background-color: #FFCCCC;    
+    position: relative;
+    right: -8px;
+    top: -4px;    
+    border-radius: 10px;
+    /* Rotate div */
+    -ms-transform: rotate(145deg); /* IE 9 */
+    -webkit-transform: rotate(145deg); /* Chrome, Safari, Opera */
+    transform: rotate(145deg);
+ }
+ 
+ #MAOE {
+    /*display: none;*/
+    width: 16px;
+    height: 16px;
+    background-color: black;    
+    position: absolute;
+    left: -4px;
+    top: -5px; 
+    border-radius: 12.5px;
+ }
+ 
+ #COXAD {
+    /*display: none;*/
+    width: 16px;
+    height: 30px;
+    background-color: blue;    
+    position: absolute;
+    right: 17.8px;
+    bottom: -20.50px;
+    border-radius: 10px;
+    /* Rotate div */
+    -ms-transform: rotate(12.5deg); /* IE 9 */
+    -webkit-transform: rotate(12.5deg); /* Chrome, Safari, Opera */
+    transform: rotate(12.5deg);
+ }
+ 
+ #PERNAD {
+    /*display: none;*/
+    width: 12px;
+    height: 35px;
+    background-color: #FFCCCC;    
+    position: absolute;
+    left: -1px;
+    bottom: -28.5px;
+    border-radius: 10px;
+    /* Rotate div */
+    -ms-transform: rotate(12.5deg); /* IE 9 */
+    -webkit-transform: rotate(12.5deg); /* Chrome, Safari, Opera */
+    transform: rotate(6.25deg);
+ }
+ 
+ #COXAE {
+    /*display: none;*/
+    width: 16px;
+    height: 30px;
+    background-color: blue;    
+    position: absolute;
+    left: 17.8px;
+    bottom: -20.50px;
+    border-radius: 10px;
+    /* Rotate div */
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+ }
+ 
+ #PERNAE {
+    /*display: none;*/
+    width: 12px;
+    height: 35px;
+    background-color: #FFCCCC;    
+    position: absolute;
+    right: -7px;
+    bottom: -26.50px;
+    border-radius: 10px;
+    /* Rotate div */
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+ }
+ 
+ #PEE {
+    /*display: none;*/
+    width: 20.8px;
+    height: 6.4px;
+    background-color: black;    
+    position: absolute;
+    right: 0px;
+    bottom: 1px;    
+    border-radius: 4px;
+ }
+ 
+ #PED {
+    /*display: none;*/
+    width: 20.8px;
+    height: 6.4px;
+    background-color: black;    
+    position: absolute;
+    right: 0px;
+    bottom: 1px;    
+    border-radius: 4px;
+ }
+ 
+ hr { 
+    border-style: inset;
+    border-width: 1px;
+    color: BLACK;
+    width: 90%;
+ }
+ 
+ #DIV00 {
+    display: block;
+    position: absolute;
+    width: 85%;
+    right: 7.5%;
+    top: 62%;
+    padding: 15px 0px 15px 0px;
+    border: 1px ridge black;
+    border-radius: 8px;
+ }
+ 
+ #DIV01 {
+    display: block;
+    position: fixed;
+    width: 85%;
+    right: 7.5%;
+    top: 62%;
+    padding: 15px 0px 15px 0px;
+    border: 1px ridge black;
+    border-radius: 8px;
+ }
+
+ #forca {
+    display: block;
+    background: #4e3a0b;
+    height: 160px;
+    position: relative;
+    width: 16px;
+    box-shadow: -3px -2px 0px 0px #888888;
+ }
+ 
+ #forca:after {
+    background: #4e3a0b;
+    content: "";
+    height: 15px;
+    left: 0px;
+    position: absolute;
+    top: -5px;
+    width: 110px;
+    box-shadow: -3px -3px 0px 0px #888888;
+ }
+ 
+ #forca:before {
+    background: #4e3a0b;
+    content: "";
+    height: 15px;
+    left: -2px;
+    position: absolute;
+    top: 15px;
+    width: 70px;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+ }

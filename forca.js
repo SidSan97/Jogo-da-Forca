@@ -2,10 +2,7 @@
 -------------------
       FORCA em DHTML 0.1 beta;  
                -------------------    
- 		      by Francke Silva
-	-------------------		   
-		MSN :  Francke@xmasters.com.br
- 						-------------------
+
 */
 var y =0;
   //  BIBLIOTECA DE PALAVRAS  
@@ -79,12 +76,6 @@ function tempodejogo(){
 	  precionando o botao
 	  NOVO JOGO; 
           -------------------    
- 		      by Francke Silva
-	-------------------		   
-		E¹/²:  Francke@xmasters.com.br
-		WEB :  http://xmasters.com.br
-		MSN :  Francke@xmasters.com.br
- 						-------------------
 */	
 	
 function sorteio() 
@@ -114,15 +105,9 @@ function sorteio()
 	  uma letra que nao existe na 
 	  palavra sorteada;  
           -------------------    
- 		      by Francke Silva
-	-------------------		   
-		E¹/²:  Francke@xmasters.com.br
-		WEB :  http://xmasters.com.br
-		MSN :  Francke@xmasters.com.br
- 						-------------------
 */
 function verificaerro(){
-   var m = document.getElementById('g');
+  /* var m = document.getElementById('g');
    switch (erro){
     case 0:
         break
@@ -147,7 +132,7 @@ function verificaerro(){
     default:
     var tecladaosome = document.getElementById('tecladao');
         tecladaosome.style.display = 'none';
-        /*
+        
         d = d + "        ";
         d = d + "\n\n<b>       ";
         d = d + "GAME OVER</b>".blink() +"  \n\n";
@@ -156,7 +141,7 @@ function verificaerro(){
         d = d + "<a href=# onclick='window.location.reload( false );' ";
         d = d + "  tyle='border: ";
         d = d + " 1px solid #000000;' class=gameover>[ NOVO JOGO ]</a>";
-        */
+        
         d = "<img src='gover.gif'><br><br>";
         d = d + "<font class=gameover><b>GAME OVER</b></font><br>";
         
@@ -164,14 +149,14 @@ function verificaerro(){
         d = d + "<a href=# onclick='window.location.reload( false );' ";
         d = d + "  tyle='border: ";
         d = d + " 1px solid #000000;' class=gameover>[ NOVO JOGO ]</a><br>";
-        d = d + "<font class=gameover> Palavra: <blink>" + palavras[iconte].toUpperCase() +"</blink></font>";
+        d = d + "<font class=gameover> Palavra: <blink>" + palavras[iconte].toUpperCase() +"</blink></font>";*/
 		
   }
      // passar resultados de erro;
 	// criar boneco para a forca;  
-        m.innerHTML = d;
+        /*m.innerHTML = d;
         erro++;		
-}
+}*/
 /*
 -------------------
       JOGAR -
@@ -180,13 +165,7 @@ function verificaerro(){
 	  letras, esses dados sao  passados
 	  por essa funcao que verifica se 
 	  existe a letra na palavra sorteada; 
-          -------------------    
- 		      by Francke Silva
-	-------------------		   
-		E¹/²:  Francke@xmasters.com.br
-		WEB :  http://xmasters.com.br
-		MSN :  Francke@xmasters.com.br
- 						-------------------
+          -------------------    					
 */
 
 function jogar(letra){
@@ -271,12 +250,6 @@ function jogar(letra){
 -------------------
       TECLADO VIRTUAL  
           -------------------    
- 		      by Francke Silva
-	-------------------		   
-		E¹/²:  Francke@xmasters.com.br
-		WEB :  http://xmasters.com.br
-		MSN :  Francke@xmasters.com.br
- 						-------------------
 */
 	document.write("<table id=tecladao cellpadding=3 cellspacing=6 border=1 width=390 height=90 bgcolor=white style='border-radius: 5px; position: relative; margin-top: 16%; margin-left: 35.6%;'");
 	document.write(" style='border: 1px solid #666666;'><tr style='border: 1px #000000;'> <form name=f action=# onsubmit='return false;'>");
