@@ -34,6 +34,7 @@
     text-decoration: none;
     border: #23afa8 1px solid;
     border-radius: 3px;
+    position: relative;
 }
 
 .visao {
