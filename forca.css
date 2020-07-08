@@ -1,3 +1,4 @@
+
 .title {
     font-family: 'Montserrat Subrayada', sans-serif;
     color: white;
@@ -380,4 +381,12 @@
     -ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
     transform: rotate(-45deg);
+ }
+
+ .tecl
+ {
+    margin-left: 20%;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 0;
  }
