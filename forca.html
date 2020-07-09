@@ -21,137 +21,130 @@
                 <div class="col-12">
                     <h1 class="title">Jogo da Forca</h1>
                 </div>
+
                 <div class="forca">
-                    <h2 id="dicas"></h2>
-                    <section class="sec">
+                    <h2 id="dicas"></h2>                   
                         <div id="jg">
                             
                         </div> 
                         
-                        <!--p id="usados"></p-->
-            <table id="tecladao" cellpadding="3" cellspacing="6" border="1" width="390" height="90" bgcolor="white" style="border-radius: 5px; position: relative; margin-top: 16%;"> 
-                <tbody>
-                    <tr style="border: 1px #000000;">                          
-                        <form name="f" action="#" onsubmit='return false;'> 
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'">
-                                <input type="submit" id="A" name="A" onclick="jogar('A');document.f.A.style.display ='none';" class="teclado" value="A">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'">
-                                <input type="submit" name="B" onclick="jogar('B');document.f.B.style.display ='none';" class="teclado" value="B">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="C" onclick="jogar('C');document.f.C.style.display ='none';" class="teclado" value="C">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="D" onclick="jogar('D');document.f.D.style.display ='none';" class="teclado" value="D">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="E" onclick="jogar('E');document.f.E.style.display ='none';" class="teclado" value="E">
-                            </td>
-                            
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="F" onclick="jogar('F');document.f.F.style.display ='none';" class="teclado" value="F">
-                            </td>
-                            
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="G" onclick="jogar('G');document.f.G.style.display ='none';" class="teclado" value="G">
-                            </td>
-                            
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="H" onclick="jogar('H');document.f.H.style.display ='none';" class="teclado" value="H">
-                            </td>
-                    </tr>
-
-                    <tr style="border: 1px #000000;">
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="I" onclick="jogar('I');document.f.I.style.display ='none';" class="teclado" value="I">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="J" onclick="jogar('J');document.f.J.style.display ='none';" class="teclado" value="J">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="K" onclick="jogar('K');document.f.K.style.display ='none';" class="teclado" value="K">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="L" onclick="jogar('L');document.f.L.style.display ='none';" class="teclado" value="L">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'">
-                                <input type="submit" name="M" onclick="jogar('M');document.f.M.style.display ='none';" class="teclado" value="M">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="N" onclick="jogar('N');document.f.N.style.display ='none';" class="teclado" value="N">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="O" onclick="jogar('O');document.f.O.style.display ='none';" class="teclado" value="O">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="P" onclick="jogar('P');document.f.P.style.display ='none';" class="teclado" value="P">
-                            </td>
-                    </tr>
-
-                    <tr style="border: 1px #000000;">
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="Q" onclick="jogar('Q');document.f.Q.style.display ='none';" class="teclado" value="Q">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="R" onclick="jogar('R');document.f.R.style.display ='none';" class="teclado" value="R">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="S" onclick="jogar('S');document.f.S.style.display ='none';" class="teclado" value="S">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="T" onclick="jogar('T');document.f.T.style.display ='none';" class="teclado" value="T">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="U" onclick="jogar('U');document.f.U.style.display ='none';" class="teclado" value="U">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="V" onclick="jogar('V');document.f.V.style.display ='none';" class="teclado" value="V">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="W" onclick="jogar('W');document.f.W.style.display ='none';" class="teclado" value="W">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="X" onclick="jogar('X');document.f.X.style.display ='none';" class="teclado" value="X">
-                            </td>
-                </tr>
-
-                <tr style="border: 1px #000000;">
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="Y" onclick="jogar('Y');document.f.Y.style.display ='none';" class="teclado" value="Y">
-                            </td>
-
-                            <td align="center" valign="middle" width="15" style="border: 1px solid white;" bgcolor="white" onmouseover="style.backgroundColor='white;'" onmouseout="style.backgroundColor='white'"> 
-                                <input type="submit" name="Z" onclick="jogar('Z');document.f.Z.style.display ='none';" class="teclado" value="Z">
-                            </td>
-                </form>
-                </tr>
-                </tbody>
-            </table>                    
-
-                        <!--div id="tcdo"> </div>
-                        <div id="g"></div-->
-                    </section>
-                    <div class="teclado"></div>
-
+                        <table id="tecladao" cellpadding="3" cellspacing="6" border="1" width="390" height="90" bgcolor="white"> 
+                            <form name="f" action="#" onsubmit='return false;'>
+                                <tbody>
+                                    <tr>                                                  
+                                        <td align="center" valign="middle" width="15">
+                                            <input type="submit" name="A" onclick="jogar('A');document.f.A.style.display ='none';" class="teclado" value="A">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15">
+                                            <input type="submit" name="B" onclick="jogar('B');document.f.B.style.display ='none';" class="teclado" value="B">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="C" onclick="jogar('C');document.f.C.style.display ='none';" class="teclado" value="C">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="D" onclick="jogar('D');document.f.D.style.display ='none';" class="teclado" value="D">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="E" onclick="jogar('E');document.f.E.style.display ='none';" class="teclado" value="E">
+                                        </td>
+                                        
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="F" onclick="jogar('F');document.f.F.style.display ='none';" class="teclado" value="F">
+                                        </td>
+                                        
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="G" onclick="jogar('G');document.f.G.style.display ='none';" class="teclado" value="G">
+                                        </td>
+                                        
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="H" onclick="jogar('H');document.f.H.style.display ='none';" class="teclado" value="H">
+                                        </td>
+                                    </tr>
+            
+                                    <tr style="border: 1px #000000;">
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="I" onclick="jogar('I');document.f.I.style.display ='none';" class="teclado" value="I">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="J" onclick="jogar('J');document.f.J.style.display ='none';" class="teclado" value="J">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="K" onclick="jogar('K');document.f.K.style.display ='none';" class="teclado" value="K">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="L" onclick="jogar('L');document.f.L.style.display ='none';" class="teclado" value="L">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15">
+                                            <input type="submit" name="M" onclick="jogar('M');document.f.M.style.display ='none';" class="teclado" value="M">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="N" onclick="jogar('N');document.f.N.style.display ='none';" class="teclado" value="N">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="O" onclick="jogar('O');document.f.O.style.display ='none';" class="teclado" value="O">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="P" onclick="jogar('P');document.f.P.style.display ='none';" class="teclado" value="P">
+                                        </td>
+                                    </tr>
+            
+                                    <tr style="border: 1px #000000;">
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="Q" onclick="jogar('Q');document.f.Q.style.display ='none';" class="teclado" value="Q">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="R" onclick="jogar('R');document.f.R.style.display ='none';" class="teclado" value="R">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="S" onclick="jogar('S');document.f.S.style.display ='none';" class="teclado" value="S">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="T" onclick="jogar('T');document.f.T.style.display ='none';" class="teclado" value="T">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="U" onclick="jogar('U');document.f.U.style.display ='none';" class="teclado" value="U">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="V" onclick="jogar('V');document.f.V.style.display ='none';" class="teclado" value="V">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="W" onclick="jogar('W');document.f.W.style.display ='none';" class="teclado" value="W">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="X" onclick="jogar('X');document.f.X.style.display ='none';" class="teclado" value="X">
+                                        </td>
+                                    </tr>
+            
+                                    <tr style="border: 1px #000000;">
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="Y" onclick="jogar('Y');document.f.Y.style.display ='none';" class="teclado" value="Y">
+                                        </td>
+            
+                                        <td align="center" valign="middle" width="15"> 
+                                            <input type="submit" name="Z" onclick="jogar('Z');document.f.Z.style.display ='none';" class="teclado" value="Z">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </form>
+                        </table>                    
                 </div>
             </div>
 

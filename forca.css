@@ -56,6 +56,11 @@
     text-decoration: none;
 }
 
+tbody td
+{
+   border: 1px solid white;
+}
+
 #DIVCORPO {
    /* display: block;*/
     position: fixed;
@@ -383,10 +388,3 @@
     transform: rotate(-45deg);
  }
 
- .tecl
- {
-    margin-left: 20%;
-    border: 1px solid blue;
-    border-radius: 5px;
-    padding: 0;
- }
