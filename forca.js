@@ -187,6 +187,7 @@ function jogar(letra){
              }
        
     }
+    var usado = letra;
      if(coleta.match(letra) == letra){
 
         //  ENCONTROU
@@ -244,6 +245,8 @@ function jogar(letra){
 					stempo.document.bgColor="black"
 					stempo.document.close() 		  
      }
+     //document.getElementById('usados').innerHTML = "Letras usadas: " + usado;
+     //letra = document.style.display = 'none';
 }   
 
 /*
@@ -251,10 +254,10 @@ function jogar(letra){
       TECLADO VIRTUAL  
           -------------------    
 */
-	/*document.write("<table id=tecladao cellpadding=3 cellspacing=6 border=1 width=390 height=90 bgcolor=white style='border-radius: 5px; position: relative; margin-top: 16%; margin-left: 35.6%;'");
+	/*.write("<table id=tecladao cellpadding=3 cellspacing=6 border=1 width=390 height=90 bgcolor=white style='border-radius: 5px; position: relative; margin-top: 16%; margin-left: 35.6%;'");
 	document.write(" style='border: 1px solid #666666;'><tr style='border: 1px #000000;'> <form name=f action=# onsubmit='return false;'>");
-var linha=0;*/
-/*for(i=65; i < 91; i++){
+var linha=0;
+for(i=65; i < 91; i++){
     if(linha == 8) {
        linha=0;
        document.write("</tr><tr style='border: 1px #000000;'>");
