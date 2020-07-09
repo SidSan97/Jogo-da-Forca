@@ -83,7 +83,7 @@ function sorteio()
     var djc = "<table cellpadding=2  ";
         djc = djc + "cellspacing=4 border=0 width=390 ";
         djc = djc + " height=40 bgcolor=#000000 style='border: ";
-        djc = djc + " 1px solid #666666;'><tr>";
+        djc = djc + " 1px solid #666666; width: 100%;'><tr>";
 
     for(k = 0; k < palavras[iconte].length; k++)
     {
