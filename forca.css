@@ -70,12 +70,43 @@ tbody td
    background-color: #23afa8;
    padding-left: 100px;
    width: 100%;
-   height: 320px;
+   min-height: 245px;
+}
+
+#palavraSec
+{
+   color: #a80c0c;
+   font-weight: bold;
+   margin-bottom: 20px;
+   display: none;
+}
+
+#msgGanhou
+{
+   color: green;
+   font-weight: 700;
+   display: none;
+}
+
+#msgPerdeu
+{
+   color: red;
+   font-weight: 700;
+   display: none;
+}
+
+#newGame
+{
+   color: blanchedalmond;
+   background-color: black;
+   height: 45px;
+   width: auto;
+   margin-bottom: 3%;
+   display: none;
 }
 
 #DIVCORPO {
-   /* display: block;*/
-    /*position: fixed;*/
+   /* display: none;*/
     width: 85%;
     height: 50%;
     right: 7.5%;
@@ -86,7 +117,7 @@ tbody td
  }
  
  #ROSTO {
-    /*display: none;*/
+    display: none;
     line-height: 24px;
     letter-spacing: 0.25px;
     font-size: 12px;
@@ -97,7 +128,7 @@ tbody td
  }
  
  #CHAPEU {
-    /*display: none;*/
+    display: none;
     width: 19.2px;
     height: 12.8px;
     background-color: black;
@@ -108,7 +139,7 @@ tbody td
  }
  
  #ABA {
-    /*display: none;*/
+   display: none;
     width: 32px;
     height: 3.2px;
     background-color: black;
@@ -119,7 +150,7 @@ tbody td
  }
  
  #CABECA {
-    /*display: none;*/
+    display: none;
     width: 25.6px;
     height: 26.4px;
     background-color: #FFCCCC;
@@ -131,7 +162,7 @@ tbody td
  }
  
  #PESCOCO {
-    /*display: none;*/
+    display: none;
     width: 11.2px;
     height: 8px;
     background-color: #FFCCCC;
@@ -142,7 +173,7 @@ tbody td
  }
  
  #BOCA { 
-    /*display: none;*/
+    display: none;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -153,7 +184,7 @@ tbody td
  }
  
  #QUEIXO { 
-    /*display: none;*/
+    display: none;
     width: 0px;
     height: 0px;
     border-radius: 50%;
@@ -164,7 +195,7 @@ tbody td
  }
  
  #TRONCO {
-    /*display: none;*/
+    display: none;
     width: 32px;
     height: 48px;
     background-color: blue;
@@ -175,7 +206,7 @@ tbody td
  }
  
  #BRACOD1 {
-   /* display: none;*/
+    display: none;
     width: 12px;
     height: 35px;
     background-color: blue;    
@@ -190,7 +221,7 @@ tbody td
  }
  
  #BRACOD2 {
-/*    display: none;*/
+    display: none;
     width: 10px;
     height: 30px;
     background-color: #FFCCCC;    
@@ -205,7 +236,7 @@ tbody td
  }
  
  #MAOD {
-   /* display: none;*/
+    display: none;
     width: 16px;
     height: 16px;
     background-color: black;    
@@ -216,7 +247,7 @@ tbody td
  }
  
  #BRACOE1 {
-    /*display: none;*/
+    display: none;
     width: 12px;
     height: 35px;
     background-color: blue;    
@@ -231,7 +262,7 @@ tbody td
  }
  
  #BRACOE2 {
-    /*display: none;*/
+    display: none;
     width: 10px;
     height: 30px;
     background-color: #FFCCCC;    
@@ -246,7 +277,7 @@ tbody td
  }
  
  #MAOE {
-    /*display: none;*/
+    display: none;
     width: 16px;
     height: 16px;
     background-color: black;    
@@ -257,7 +288,7 @@ tbody td
  }
  
  #COXAD {
-    /*display: none;*/
+    display: none;
     width: 16px;
     height: 30px;
     background-color: blue;    
@@ -272,7 +303,7 @@ tbody td
  }
  
  #PERNAD {
-    /*display: none;*/
+    display: none;
     width: 12px;
     height: 35px;
     background-color: #FFCCCC;    
@@ -287,7 +318,7 @@ tbody td
  }
  
  #COXAE {
-    /*display: none;*/
+    display: none;
     width: 16px;
     height: 30px;
     background-color: blue;    
@@ -302,7 +333,7 @@ tbody td
  }
  
  #PERNAE {
-    /*display: none;*/
+    display: none;
     width: 12px;
     height: 35px;
     background-color: #FFCCCC;    
@@ -317,7 +348,7 @@ tbody td
  }
  
  #PEE {
-    /*display: none;*/
+    display: none;
     width: 20.8px;
     height: 6.4px;
     background-color: black;    
@@ -328,7 +359,7 @@ tbody td
  }
  
  #PED {
-    /*display: none;*/
+    display: none;
     width: 20.8px;
     height: 6.4px;
     background-color: black;    

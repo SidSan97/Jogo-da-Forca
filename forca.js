@@ -48,7 +48,6 @@ var y =0;
     var dj  = document.getElementById('jg');
     var dicas = document.getElementById('dicas');
     var erro = 1;
-    var d = "<pre><font class=gameover>";
     var iconte = Math.floor(Math.random()*7);
     var ki = new Array(palavras[iconte].length);
     var kk = new Array(dica[iconte])
@@ -95,6 +94,7 @@ function sorteio()
       djc = djc + "</tr></table><br>";
          dj.innerHTML = djc;
          dicas.innerHTML = "Dica: " + dica[iconte];
+         document.getElementById('palavraSec').innerHTML = "Palavra é: " + palavras[iconte];
 		  tempodejogo();
 }
 /*
@@ -107,56 +107,50 @@ function sorteio()
           -------------------    
 */
 function verificaerro(){
-  /* var m = document.getElementById('g');
+   var m = document.getElementById('g');
+
    switch (erro){
     case 0:
         break
     case 1:
-        d = d + "      O   \n"
+       document.getElementById('CHAPEU').style.display = "block";
+       document.getElementById('ABA').style.display = "block";
+       document.getElementById('CHAPEU').style.display = "block";
+       document.getElementById('CABECA').style.display = "block";
+       document.getElementById('QUEIXO').style.display = "block";
+       document.getElementById('BOCA').style.display = "block";
+       document.getElementById('PESCOCO').style.display = "block";
         break
     case 2:
-        d = d + "    -"
+        document.getElementById('TRONCO').style.display = "block";
         break
     case 3:
-        d = d + " | "
+        document.getElementById('BRACOD1').style.display = "block";
+        document.getElementById('BRACOD2').style.display = "block";
+        document.getElementById('MAOD').style.display = "block";
         break
     case 4:
-        d = d + "-\n"
+        document.getElementById('BRACOE1').style.display = "block";
+        document.getElementById('BRACOE2').style.display = "block";
+        document.getElementById('MAOE').style.display = "block";
         break
     case 5:
-        d = d + "     /"
+        document.getElementById('COXAD').style.display = "block";
+        document.getElementById('PERNAD').style.display = "block";
+        document.getElementById('PED').style.display = "block";
         break
     case 6:
-        d = d + " \\ \n"
+        document.getElementById('COXAE').style.display = "block";
+        document.getElementById('PERNAE').style.display = "block";
+        document.getElementById('PEE').style.display = "block";
         break
     default:
-    var tecladaosome = document.getElementById('tecladao');
-        tecladaosome.style.display = 'none';
-        
-        d = d + "        ";
-        d = d + "\n\n<b>       ";
-        d = d + "GAME OVER</b>".blink() +"  \n\n";
-        d = d + "    palavra: " + palavras[iconte];
-        d = d + "\n\n      ";
-        d = d + "<a href=# onclick='window.location.reload( false );' ";
-        d = d + "  tyle='border: ";
-        d = d + " 1px solid #000000;' class=gameover>[ NOVO JOGO ]</a>";
-        
-        d = "<img src='gover.gif'><br><br>";
-        d = d + "<font class=gameover><b>GAME OVER</b></font><br>";
-        
-        d = d + "<br>";
-        d = d + "<a href=# onclick='window.location.reload( false );' ";
-        d = d + "  tyle='border: ";
-        d = d + " 1px solid #000000;' class=gameover>[ NOVO JOGO ]</a><br>";
-        d = d + "<font class=gameover> Palavra: <blink>" + palavras[iconte].toUpperCase() +"</blink></font>";*/
-		
+        document.getElementById('msgPerdeu').style.display = 'block';
+        document.getElementById('newGame').style.display = 'block';
+        document.getElementById('palavraSec').style.display = 'block';
   }
-     // passar resultados de erro;
-	// criar boneco para a forca;  
-        /*m.innerHTML = d;
         erro++;		
-}*/
+}
 /*
 -------------------
       JOGAR -
@@ -187,7 +181,6 @@ function jogar(letra){
              }
        
     }
-    var usado = letra;
      if(coleta.match(letra) == letra){
 
         //  ENCONTROU
@@ -217,36 +210,10 @@ function jogar(letra){
 	   
      if(coleta == palavras[iconte].toUpperCase()){
 
-            var winmsg = "<br><img src='gwin.gif'>";
-                winmsg = winmsg + "<br><br><font class=gameover>Palavra revelada: <b><blink>";
-                winmsg = winmsg + palavras[iconte].toUpperCase() + "</blink>";
-                winmsg = winmsg + "<br><br>PARABÉNS VOCÊ VENCEU!!!<br><br>";
-                winmsg = winmsg + "<a href=# onclick='window.location.reload( false );' ";
-                winmsg = winmsg + "class=gameover>[ NOVO JOGO ]</a>";
-              
-            var winG = document.getElementById('g');
-                winG.innerHTML =  winmsg;
-               var tsome = document.getElementById('tecladao');
-                   tsome.style.display = 'none';
-
-
-				   
-				var stempo = window.open("", "forca", 'width=370,height=20');
-				
-				    if(itempodejogo < 30) {
-						stempo.document.write("<center><font style='font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;font-color:#ffffff;color:#ffffff;font-weight:bold; text-decoration : none;'><b>PARABENS seu tempo foi de ("+itempodejogo+")seg.<br><img src='gwin.gif'>"); 
-					}else {
-					      if(itempodejogo < 60){
-						 stempo.document.write("<center><font style='font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;font-color:#ffffff;color:#ffffff;font-weight:bold; text-decoration : none;'><b>eh vc foi mais ou menos, mas mesmo assim PARABENS seu tempo foi de ("+itempodejogo+")seg.<br><img src='gwin.gif'>"); 
-						  } else {
-						         stempo.document.write("<center><font style='font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;font-color:#ffffff;color:#ffffff;font-weight:bold; text-decoration : none;'><b></b>Ateh ganhou, mas es MUITO FRACO.. seu tempo foi de ("+itempodejogo+")seg.<br><img src='gwin.gif'>"); 
-								  }
-					}			   
-					stempo.document.bgColor="black"
-					stempo.document.close() 		  
+        document.getElementById('msgGanhou').style.display = 'block';
+        document.getElementById('newGame').style.display = 'block';
+        document.getElementById('palavraSec').style.display = 'block';
      }
-     //document.getElementById('usados').innerHTML = "Letras usadas: " + usado;
-     //letra = document.style.display = 'none';
 }   
 
 /*
