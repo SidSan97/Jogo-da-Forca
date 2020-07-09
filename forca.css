@@ -1,15 +1,18 @@
 
 .title {
     font-family: 'Montserrat Subrayada', sans-serif;
-    color: white;
+    color: green;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 50px;
 }
 
 .fundo {
-   /* background-image: url('imagens/fundo1.jpg');
+    background-image: url('imagens/fundo1.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;*/
+    background-size: 100%;
     bottom: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(52, 128, 141);
     left: 0;
     overflow: auto;
     padding: 3em;
@@ -62,15 +65,23 @@ tbody td
    border: 1px solid white;
 }
 
+.divBoneco
+{
+   background-color: #23afa8;
+   padding-left: 100px;
+   width: 100%;
+   height: 320px;
+}
+
 #DIVCORPO {
    /* display: block;*/
-    position: fixed;
+    /*position: fixed;*/
     width: 85%;
     height: 50%;
     right: 7.5%;
     top: 5%;
     padding: 15px 0px 0px 15px;
-    border: 1px ridge black;
+    /*border: 1px ridge black;*/
     border-radius: 8px;
  }
  
