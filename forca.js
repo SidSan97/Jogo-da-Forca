@@ -146,6 +146,7 @@ function verificaerro(){
         break
     default:
         document.getElementById('msgPerdeu').style.display = 'block';
+        document.getElementById('enforcadoFrase').style.display = 'block';
         document.getElementById('newGame').style.display = 'block';
         document.getElementById('palavraSec').style.display = 'block';
   }
@@ -192,7 +193,7 @@ function jogar(letra){
       t = "<table cellpadding=2 cellspacing=4 ";
       t = t + " border=0 width=390 height=40 ";
       t = t + " bgcolor=#000000 style='border: ";
-      t = t + " 1px solid #666666;'><tr>";
+      t = t + " 1px solid #666666; width: 100%;'><tr>";
 	  
      for(ik = 0; ik < palavras[iconte].length; ik++){
 	     t = t + "<td style='border: ";

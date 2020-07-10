@@ -105,6 +105,13 @@ tbody td
    display: none;
 }
 
+#enforcadoFrase
+{
+   color: #F00;
+   display: none;
+   position: relative;
+}
+
 #DIVCORPO {
    /* display: none;*/
     width: 85%;
