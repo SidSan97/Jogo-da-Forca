@@ -18,7 +18,7 @@
     <div class="fundo">
         <div class="container">
             <h3 class="title">Jogo da Forca</h3>
-            <div class="row">
+            <div class="row mb-3">
               <div class="col-lg-5 mb-2">           
                 <div class="forca">
                     <h2 id="dicas"></h2>                                    
@@ -165,6 +165,7 @@
                             </div>
                             <h1 id="h01"></h1>
                         </div>
+
                         <h1 id="h02"></h1>
                         <p id="h99"></p>
                         <h2 id="msgGanhou">Parabéns, você ganhou!</h2>
@@ -173,11 +174,38 @@
                         <div style="width: 100%; display: flex; justify-content: center;">
                             <button id="newGame" onclick='window.location.reload( false );'>Novo Jogo</button>
                         </div>
-                     </div>
+                    </div>
                 </div>
-              </div>
+              </div>            
+            </div>
 
-              <input type="radio">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="divPlayer">
+                            <table id="tablePlayer">
+                                <td>
+                                    <input type="radio" name="player" id="equipe" onclick="equipe()">
+                                    <p>Jogar em equipe</p>                                 
+                                </td>
+
+                                <td>
+                                    <input type="radio" name="player" id="individual">
+                                    <p>Jogar individualmente</p>
+                                </td>
+                            </table>
+                        <!------------------------------------------>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="text" name="" id=""> <input type="number" value="0" disable>
+                                    </td>
+                                </tr>                   
+                            </table>
+                            <button onclick="document.write('ghgffff')">add mais</button>
+
+                            <!--p id="sg"> sgsgsdg</p-->
+                    </div>
+                </div>
             </div>
         </div>
     </div>

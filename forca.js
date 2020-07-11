@@ -76,6 +76,12 @@ function tempodejogo(){
 	  NOVO JOGO; 
           -------------------    
 */	
+
+
+/*function equipe()
+{
+    document.getElementById('sg').style.display = 'none';
+}*/
 	
 function sorteio() 
 {
