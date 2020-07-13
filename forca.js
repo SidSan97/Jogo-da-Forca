@@ -82,6 +82,54 @@ function tempodejogo(){
 {
     document.getElementById('sg').style.display = 'none';
 }*/
+
+//document.body.onload = adcElemento;
+
+function adcElemento () { 
+    //var elemento_pai = document.body.tablePlayer;
+
+   /* var novoElem  = document.createElement('tr');
+    var input     = document.createElement('input');
+    novoElem.appendChild(input);
+
+//
+// Recuperando a lista
+//
+    var table = document.getElementsByTagName('table')[3];
+
+//
+// Recuperando os itens
+//
+    var itens = document.getElementsByTagName('ul');
+
+//
+// Inserindo com insertBefore()
+//
+    table.insertBefore(novoElem, itens[0]);*/
+
+    var novoElem  = document.createElement('tr');
+    var novoElem2     = document.createElement('td');
+    var input = document.createElement('input');
+    var input2 = document.createElement('input');
+    novoElm2.appendChild(input);
+    novoElm2.appendChild(input2);
+
+//
+// Recuperando a lista
+//
+    var table = document.getElementsByTagName('table')[3];
+
+//
+// Recuperando os itens
+//
+    var itens = document.getElementsByTagName('ul');
+
+//
+// Inserindo com insertBefore()
+//
+    table.insertBefore(novoElem, itens[0]);
+    table.insertBefore(novoElem2, itens[0]);
+}
 	
 function sorteio() 
 {
