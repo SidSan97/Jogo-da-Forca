@@ -135,20 +135,21 @@ function adcElemento () {
     var novoElem2  = document.createElement('td');
     var input      = document.createElement('input');
     var select     = document.createElement('select');
-    var option     = document.createElement('option');
-    var num = "0";
-    var valor = document.createTextNode('gkhg');
-
+    var option     = document.createElement('option');  
+    var num = 0;
+    var valor = document.createTextNode(num);
+    
     select.appendChild(option);
     novoElem2.appendChild(input);
     novoElem2.appendChild(select);
     option.appendChild(valor);
 
-  /*  for(var i=0; i<10; i++)
+    for(var i=0; i<10; i++)
     {
-        num++;
+        var option2 = document.createElement('option');
+        select.appendChild(option2);
     }
-*/
+
 //
 // Recuperando a lista
 //
