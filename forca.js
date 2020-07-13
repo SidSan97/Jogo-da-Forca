@@ -107,13 +107,48 @@ function adcElemento () {
 //
     table.insertBefore(novoElem, itens[0]);*/
 
-    var novoElem  = document.createElement('tr');
-    var novoElem2     = document.createElement('td');
-    var input = document.createElement('input');
-    var input2 = document.createElement('input');
-    novoElm2.appendChild(input);
-    novoElm2.appendChild(input2);
+  /*  var novoElem   = document.createElement('tr');
+    var novoElem2  = document.createElement('td');
+    var input      = document.createElement('input');
+    var input2     = document.createElement('input');
+    novoElem2.appendChild(input);
+    novoElem2.appendChild(input2);
 
+//
+// Recuperando a lista
+//
+    var table = document.getElementsByTagName('table')[3];
+
+//
+// Recuperando os itens
+//
+    var itens = document.getElementsByTagName('ul');
+
+//
+// Inserindo com insertBefore()
+//
+    table.insertBefore(novoElem, itens[0]);
+    table.insertBefore(novoElem2, itens[1]);
+*/
+
+    var novoElem   = document.createElement('tr');
+    var novoElem2  = document.createElement('td');
+    var input      = document.createElement('input');
+    var select     = document.createElement('select');
+    var option     = document.createElement('option');
+    var num = "0";
+    var valor = document.createTextNode('gkhg');
+
+    select.appendChild(option);
+    novoElem2.appendChild(input);
+    novoElem2.appendChild(select);
+    option.appendChild(valor);
+
+  /*  for(var i=0; i<10; i++)
+    {
+        num++;
+    }
+*/
 //
 // Recuperando a lista
 //
