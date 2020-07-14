@@ -77,7 +77,6 @@ function tempodejogo(){
           -------------------    
 */	
 
-
 /*function equipe()
 {
     document.getElementById('sg').style.display = 'none';
@@ -135,19 +134,24 @@ function adcElemento () {
     var novoElem2  = document.createElement('td');
     var input      = document.createElement('input');
     var select     = document.createElement('select');
-    var option     = document.createElement('option');  
-    var num = 0;
-    var valor = document.createTextNode(num);
+    //var option     = document.createElement('option');  
+    let num = 0;
+    //var valor = document.createTextNode(num);
     
-    select.appendChild(option);
+    //select.appendChild(option);
     novoElem2.appendChild(input);
     novoElem2.appendChild(select);
-    option.appendChild(valor);
+   // option.appendChild(valor);
 
-    for(var i=0; i<10; i++)
+    for(let i=0; i<10; i++)
     {
-        var option2 = document.createElement('option');
-        select.appendChild(option2);
+        //let num = 0;
+        num = num + 1;
+        var option = document.createElement('option');
+        var valor = document.createTextNode(num);
+
+        select.appendChild(option);
+        option.appendChild(valor);
     }
 
 //
