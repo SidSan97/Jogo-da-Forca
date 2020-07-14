@@ -182,30 +182,27 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="divPlayer">
-                            <table id="tablePlayer">
+                            <table id="tablePlayerTitle">
                                 <td>
-                                    <input type="radio" name="player" id="equipe" onclick="equipe()">
-                                    <p>Jogar em equipe</p>                                 
+                                    <input type="radio" name="player" id="equipe" onclick="listaJogadores()">
+                                    <p>Jogar em equipe/individual</p>                                 
                                 </td>
 
                                 <td>
-                                    <input type="radio" name="player" id="individual">
-                                    <p>Jogar individualmente</p>
+                                    <input type="radio" name="player" id="individual" onclick="fecharLista()">
+                                    <p>Fechar lista</p>
                                 </td>
                             </table>
-                        <!------------------------------------------>
-                        <p align="left">NOME EQUIPE / PONTUAÇÃO</p>
-                            <table id="jj">
+
+                                <!------------------------------------------>
+
+                            <p align="left" id="titlePont">NOME EQUIPE - JOGADOR / PONTUAÇÃO</p>
+                            <table id="tablePlayerPont">                              
                                 <tr>
-                                    <td>
-                                        <!--select name="" id="">
-                                            <option value="">sdfsdafsf</option>
-                                        </select-->                              
-                                        <input type="text" name="" id=""> <input type="number" value="0" disable>
-                                    </td>
+                                    <td>  </td>
                                 </tr>                                                 
                             </table>
-                            <button onclick="adcElemento()">add mais</button>
+                            <button id="btnAddMais" onclick="adcElemento()">add mais</button>
 
                             <!--p id="sg"> teste</p-->
                     </div>

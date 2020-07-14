@@ -442,24 +442,59 @@ tbody td
  {
     background-color: aquamarine;
     width: 100%;
-    height: 300px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-left: 2px;
  }
 
- #tablePlayer 
+ #titlePont
+ {
+    color: black;
+    font-weight: bold;
+    display: none;
+ }
+
+ #btnAddMais
+ {
+    display: none;
+ }
+
+ #tablePlayerTitle
  {
     width: 100%;
     border: none;
  }
 
- #tablePlayer td
+ #tablePlayerTitle td
  {
     border: none;
  }
 
- #tablePlayer p
+ #tablePlayerTitle p
  {
-    color: black;
+    color: rgb(48, 48, 48);
     font-size: 16px;
     font-weight: 700;
+ }
+
+ #tablePlayerPont
+ {
+    display: none;
+ }
+
+ #tablePlayerPont td
+ {
+    border: none;
+ }
+
+ #tablePlayerPont select
+ {
+    height: 30px;
+ }
+
+ #tablePlayerPont input
+ {
+    height: 30px;
+    margin-bottom: 5px;
  }
 

@@ -77,75 +77,33 @@ function tempodejogo(){
           -------------------    
 */	
 
-/*function equipe()
+function listaJogadores()
 {
-    document.getElementById('sg').style.display = 'none';
-}*/
+    document.getElementById('tablePlayerPont').style.display = 'block';
+    document.getElementById('titlePont').style.display       = 'block';
+    document.getElementById('btnAddMais').style.display      = 'block';
+}
 
-//document.body.onload = adcElemento;
+function fecharLista()
+{
+    document.getElementById('tablePlayerPont').style.display = 'none';
+    document.getElementById('titlePont').style.display       = 'none';
+    document.getElementById('btnAddMais').style.display      = 'none';
+}
 
 function adcElemento () { 
-    //var elemento_pai = document.body.tablePlayer;
-
-   /* var novoElem  = document.createElement('tr');
-    var input     = document.createElement('input');
-    novoElem.appendChild(input);
-
-//
-// Recuperando a lista
-//
-    var table = document.getElementsByTagName('table')[3];
-
-//
-// Recuperando os itens
-//
-    var itens = document.getElementsByTagName('ul');
-
-//
-// Inserindo com insertBefore()
-//
-    table.insertBefore(novoElem, itens[0]);*/
-
-  /*  var novoElem   = document.createElement('tr');
-    var novoElem2  = document.createElement('td');
-    var input      = document.createElement('input');
-    var input2     = document.createElement('input');
-    novoElem2.appendChild(input);
-    novoElem2.appendChild(input2);
-
-//
-// Recuperando a lista
-//
-    var table = document.getElementsByTagName('table')[3];
-
-//
-// Recuperando os itens
-//
-    var itens = document.getElementsByTagName('ul');
-
-//
-// Inserindo com insertBefore()
-//
-    table.insertBefore(novoElem, itens[0]);
-    table.insertBefore(novoElem2, itens[1]);
-*/
-
+ 
     var novoElem   = document.createElement('tr');
     var novoElem2  = document.createElement('td');
     var input      = document.createElement('input');
-    var select     = document.createElement('select');
-    //var option     = document.createElement('option');  
-    let num = 0;
-    //var valor = document.createTextNode(num);
+    var select     = document.createElement('select'); 
+    let num = -1;
     
-    //select.appendChild(option);
     novoElem2.appendChild(input);
     novoElem2.appendChild(select);
-   // option.appendChild(valor);
 
     for(let i=0; i<10; i++)
     {
-        //let num = 0;
         num = num + 1;
         var option = document.createElement('option');
         var valor = document.createTextNode(num);
