@@ -9,46 +9,43 @@ var y =0;
   var palavras = new Array();
   palavras[0]  = "carteira";
   palavras[1]  = "brasil";
-  palavras[2]  = "amorzinho";
-  palavras[3]  = "fresquinho";
-  palavras[4]  = "andrezinho";
-  palavras[5]  = "bobeira";
-  palavras[6]  = "marcos";
-  palavras[7]  = "selio";
-  palavras[8]  = "jogo";
-  palavras[9]  = "mapa";
-  palavras[10] = "babado";
-  palavras[11] = "ana";
-  palavras[12] = "critico";
-  palavras[13] = "windows";
-  palavras[14] = "linux";
-  palavras[15] = "macaco";
-  palavras[16] = "panela";
-  palavras[17] = "frederico";
-  palavras[18] = "fofura";
-  palavras[19] = "grafico";
-  palavras[20] = "mula";
-  palavras[21] = "cavalo";
-  palavras[22] = "escola";
+  palavras[2]  = "sidnei";
+  palavras[3]  = "bahia";
+  palavras[4]  = "salvador";
+  palavras[5]  = "assembly";
+  palavras[6]  = "março";
+  palavras[7]  = "helio";
+  palavras[8]  = "exodo";
+  palavras[9]  = "milan";
+  palavras[10] = "verao";
+  palavras[11] = "ysmine";
+  palavras[12] = "windows";
+  palavras[13] = "ufba";
     
     //BIBLIOTECAS COM AS DICAS
     var dica = new Array();
-        dica[0]  = "poe dinheiro";
-        dica[1]  = "país";
-        dica[2]  = "sentimento";
-        dica[3]  = "frio";
-        dica[4]  = "nome";
-        dica[5]  = "besteira";
-        dica[6]  = "outro nome";
-        dica[7]  = "gas";
+        dica[0]  = "Põe dinheiro";
+        dica[1]  = "País";
+        dica[2]  = "Nome";
+        dica[3]  = "Primeiro campeão brasileiro";
+        dica[4]  = "Cidade nordestina";
+        dica[5]  = "Linguagem de programação";
+        dica[6]  = "Mês do ano";
+        dica[7]  = "Elemento químico gasoso";
+        dica[8]  = "Segundo livro da Biblia";
+        dica[9]  = "Time europeu"
+        dica[10] = "Estação do ano";
+        dica[11] = "Nome feminino";
+        dica[12] = "Sistema Operacional";
+        dica[13] = "Sigla de universidade federal";
 
 	// Variaveis GLOBAIS
     var  k;
-    var iconte = Math.floor(Math.random()*2);
+    //var iconte = Math.floor(Math.random()*2);
     var dj  = document.getElementById('jg');
     var dicas = document.getElementById('dicas');
     var erro = 1;
-    var iconte = Math.floor(Math.random()*7);
+    var iconte = Math.floor(Math.random()*13);
     var ki = new Array(palavras[iconte].length);
     var kk = new Array(dica[iconte])
       // adicinando adicionar o valor "__" 
@@ -77,6 +74,7 @@ function tempodejogo(){
           -------------------    
 */	
 
+//Se o input "Jogar em equipe/individual" for selecionado, irá chamar essa função
 function listaJogadores()
 {
     document.getElementById('tablePlayerPont').style.display = 'block';
@@ -84,6 +82,7 @@ function listaJogadores()
     document.getElementById('btnAddMais').style.display      = 'block';
 }
 
+//Se o input "Fechar lista" for selecionado, irá chamar essa função
 function fecharLista()
 {
     document.getElementById('tablePlayerPont').style.display = 'none';
@@ -91,6 +90,7 @@ function fecharLista()
     document.getElementById('btnAddMais').style.display      = 'none';
 }
 
+//Se o botão "add mais" for clicado, irá chamar essa função
 function adcElemento () { 
  
     var novoElem   = document.createElement('tr');
