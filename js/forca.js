@@ -15,7 +15,7 @@
   palavras[3]  = "bahia";
   palavras[4]  = "salvador";
   palavras[5]  = "assembly";
-  palavras[6]  = "março";
+  palavras[6]  = "marco";
   palavras[7]  = "helio";
   palavras[8]  = "exodo";
   palavras[9]  = "milan";
@@ -44,7 +44,7 @@
 	// Variaveis GLOBAIS
     var  k;
     //var iconte = Math.floor(Math.random()*2);
-    var visor  = document.getElementById('jg');
+    var visor  = document.getElementById('visor');
     var dicas = document.getElementById('dicas');
     var erro = 1;
     var iconte = Math.floor(Math.random()*13);
@@ -133,23 +133,23 @@ function adcElemento () {
 	
 function sorteio() 
 {
-    var djc = "<table cellpadding=2  ";
-        djc = djc + "cellspacing=4 border=0 width=390 ";
-        djc = djc + " height=40 bgcolor=#000000 style='border: ";
-        djc = djc + " 1px solid #666666; width: 100%;'><tr>";
+    var BorderTable = "<table cellpadding=2  ";
+    BorderTable = BorderTable + "cellspacing=4 border=0 width=390 ";
+    BorderTable = BorderTable + " height=40 bgcolor=#000000 style='border: ";
+    BorderTable = BorderTable + " 1px solid #666666; width: 100%;'><tr>";
 
     for(k = 0; k < palavras[iconte].length; k++)
     {
    		p[k] = k;
-		  djc = djc + "<td style='border: 0px solid #000000;' ";
-      djc = djc + " bgcolor=#000000 align=center ";
-      djc = djc + " valign=middle class=visao> __ </td>";
-	  }
-      djc = djc + "</tr></table><br>";
-         visor.innerHTML = djc;
-         dicas.innerHTML = "Dica: " + dica[iconte];
-         document.getElementById('palavraSec').innerHTML = "Palavra é: " + palavras[iconte];
-		  tempodejogo();
+        BorderTable = BorderTable + "<td style='border: 0px solid #000000;' ";
+        BorderTable = BorderTable + " bgcolor=#000000 align=center ";
+        BorderTable = BorderTable + " valign=middle class=visao> __ </td>";
+	}
+        BorderTable = BorderTable + "</tr></table><br>";
+        visor.innerHTML = BorderTable;
+        dicas.innerHTML = "Dica: " + dica[iconte];
+        document.getElementById('palavraSec').innerHTML = "Palavra é: " + palavras[iconte];
+		tempodejogo();
 }
 /*
 -------------------
