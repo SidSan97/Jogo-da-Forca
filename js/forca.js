@@ -1,10 +1,12 @@
 /*
 -------------------
-      FORCA em DHTML 0.1 beta;  
+      FORCA em HTML 0.1 beta; 
+      By: Sidnei Santiago
+      sidnei1.8santiago@hotmail.com 
                -------------------    
 
 */
-var y =0;
+
   //  BIBLIOTECA DE PALAVRAS  
   var palavras = new Array();
   palavras[0]  = "carteira";
@@ -42,7 +44,7 @@ var y =0;
 	// Variaveis GLOBAIS
     var  k;
     //var iconte = Math.floor(Math.random()*2);
-    var dj  = document.getElementById('jg');
+    var visor  = document.getElementById('jg');
     var dicas = document.getElementById('dicas');
     var erro = 1;
     var iconte = Math.floor(Math.random()*13);
@@ -144,7 +146,7 @@ function sorteio()
       djc = djc + " valign=middle class=visao> __ </td>";
 	  }
       djc = djc + "</tr></table><br>";
-         dj.innerHTML = djc;
+         visor.innerHTML = djc;
          dicas.innerHTML = "Dica: " + dica[iconte];
          document.getElementById('palavraSec').innerHTML = "Palavra é: " + palavras[iconte];
 		  tempodejogo();
@@ -259,7 +261,7 @@ function jogar(letra){
         erroSim = 0;
      }
    	   t = t + "</tr></table><br>";
-  	   dj.innerHTML = t;
+  	   visor.innerHTML = t;
 	   
      if(coleta == palavras[iconte].toUpperCase()){
 
