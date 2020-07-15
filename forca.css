@@ -4,7 +4,7 @@
     color: green;
     text-align: center;
     text-decoration: none;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 
 .fundo {
@@ -497,12 +497,3 @@ tbody td
     height: 30px;
     margin-bottom: 5px;
  }
-
-#rodape
-{
-   position: relative;
-   background-color: silver;
-   padding-left: 10px;
-   width: 400px;
-   bottom: 0;
-} 
