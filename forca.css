@@ -498,3 +498,10 @@ tbody td
     margin-bottom: 5px;
  }
 
+#rodape
+{
+   position: relative;
+   background-color: silver;
+   padding-left: 10px;
+   width: 400px;
+} 
