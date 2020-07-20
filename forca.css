@@ -468,6 +468,7 @@ tbody td
  #tablePlayerTitle td
  {
     border: none;
+    text-align: center;
  }
 
  #tablePlayerTitle p
