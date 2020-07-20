@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Forca</title>
     <link rel="stylesheet" href="forca.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&amp;display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -18,21 +15,17 @@
     <div class="fundo">
         <div class="container">
             <h3 class="title">Jogo da Forca</h3>
-<<<<<<< HEAD:forca.html
-         <p style="color: white;">Desenvolvido por: Sidnei Santiago / Ysmine Miranda</p> 
-=======
             <p style="color: white;">Desenvolvido por: Sidnei Santiago / Ysmine Miranda</p>
->>>>>>> d3d97f776f4e88fd4956379e40f82f1292d001d3:index.html
             <p><a style="color: white;" target="_blank" href="https://github.com/SidSan97/Jogo-da-Forca"> Visite-nos no GITHUB clicando aqui </a></p>
 
             <div class="row mb-3">
                 <div class="col-lg-5 mb-2">
                     <div class="forca">
-                        <h2 id="dicas"></h2>
-                        <div id="visor"> </div>
+                        <h2 id="dicas">Dica: Nome feminino</h2>
+                        <div id="visor"><table cellpadding="2" cellspacing="4" border="0" width="390" height="40" bgcolor="#000000" style="border:  1px solid #666666; width: 100%;"><tbody><tr><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td></tr></tbody></table><br></div>
 
                         <table id="tecladao" cellpadding="3" cellspacing="6" border="1" width="100%" height="90" bgcolor="white">
-                            <form name="f" action="#" onsubmit='return false;'>
+                            <form name="f" action="#" onsubmit="return false;"></form>
                                 <tbody>
                                     <tr>
                                         <td align="center" valign="middle" width="15">
@@ -145,33 +138,10 @@
                                             <input type="submit" name="Z" onclick="jogar('Z');document.f.Z.style.display ='none';" class="teclado" value="Z">
                                         </td>
                                     </tr>
-                                </tbody>
-                            </form>
+                                </tbody>                    
                         </table>
                     </div>
                 </div>
-<<<<<<< HEAD:forca.html
-              </div>
-
-              <div class="col-lg-6">
-                <div class="divBoneco">
-                    <div id="DIVCORPO">
-                        <div id="forca">
-                            <div id="CHAPEU"></div>
-                            <div id="CABECA">
-                                <div id="ABA"></div>
-                                <!--p id="ROSTO">(°&#662;°)</p-->
-                                <div id="BOCA"></div>
-                                <div id="QUEIXO"></div>
-                                <div id="PESCOCO"></div>
-                            </div>
-                     
-                            <div id="TRONCO"> <h4 id="enforcadoFrase">enforcado</h4>
-                                <div id="BRACOD1"><div id="BRACOD2"><div id="MAOD"></div></div></div>
-                                <div id="BRACOE1"><div id="BRACOE2"><div id="MAOE"></div></div></div>
-                                <div id="COXAD"><div id="PERNAD"><div id="PED"></div></div></div>
-                                <div id="COXAE"><div id="PERNAE"><div id="PEE"></div></div></div>
-=======
 
                 <div class="col-lg-6">
                     <div class="divBoneco">
@@ -187,7 +157,7 @@
                                 </div>
 
                                 <div id="TRONCO">
-                                    <h4 id="enforcadoFrase">enforcado</h4>
+                                    <!--h4 id="enforcadoFrase">enforcado</h4-->
                                     <div id="BRACOD1">
                                         <div id="BRACOD2">
                                             <div id="MAOD"></div>
@@ -210,7 +180,6 @@
                                     </div>
                                 </div>
                                 <h1 id="h01"></h1>
->>>>>>> d3d97f776f4e88fd4956379e40f82f1292d001d3:index.html
                             </div>
 
                             <h1 id="h02"></h1>
@@ -219,7 +188,7 @@
                             <h2 id="msgPerdeu">Que pena, você perdeu!</h2>
                             <h4 id="palavraSec"></h4>
                             <div style="width: 100%; display: flex; justify-content: center;">
-                                <button id="newGame" onclick='window.location.reload( false );'>Novo Jogo</button>
+                                <button id="newGame" onclick="window.location.reload( false );">Novo Jogo</button>
                             </div>
                         </div>
                     </div>
@@ -230,15 +199,17 @@
                 <div class="col-lg-5">
                     <div class="divPlayer">
                         <table id="tablePlayerTitle">
-                            <td>
-                                <input type="radio" name="player" id="equipe" onclick="listaJogadores()">
-                                <p>Jogar em equipe/individual</p>
-                            </td>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="player" id="equipe" onclick="listaJogadores()">
+                                    <p>Jogar em equipe/individual</p>
+                                </td>
 
-                            <td>
-                                <input type="radio" name="player" id="individual" onclick="fecharLista()">
-                                <p>Fechar lista</p>
-                            </td>
+                                <td>
+                                    <input type="radio" name="player" id="individual" onclick="fecharLista()">
+                                    <p>Fechar lista</p>
+                                </td>
+                            </tr>
                         </table>
 
                         <!------------------------------------------>
@@ -255,7 +226,7 @@
             </div>
         </div>
     </div>
-</body>
+
 <!-- Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -264,4 +235,4 @@
 
 <script src="js/forca.js"></script>
 
-</html>
+</body></html>
