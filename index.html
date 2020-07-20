@@ -1,11 +1,14 @@
-<html><head>
+<!DOCTYPE html>
+<html>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Forca</title>
     <link rel="stylesheet" href="forca.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -15,218 +18,200 @@
     <div class="fundo">
         <div class="container">
             <h3 class="title">Jogo da Forca</h3>
-            <p style="color: white;">Desenvolvido por: Sidnei Santiago / Ysmine Miranda</p>
+            <p style="color: white;">Desenvoldido por: Sidnei Santiago / Ysmine Miranda</p> 
             <p><a style="color: white;" target="_blank" href="https://github.com/SidSan97/Jogo-da-Forca"> Visite-nos no GITHUB clicando aqui </a></p>
 
             <div class="row mb-3">
-                <div class="col-lg-5 mb-2">
-                    <div class="forca">
-                        <h2 id="dicas">Dica: Nome feminino</h2>
-                        <div id="visor"><table cellpadding="2" cellspacing="4" border="0" width="390" height="40" bgcolor="#000000" style="border:  1px solid #666666; width: 100%;"><tbody><tr><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td><td style="border: 0px solid #000000;" bgcolor="#000000" align="center" valign="middle" class="visao"> __ </td></tr></tbody></table><br></div>
-
-                        <table id="tecladao" cellpadding="3" cellspacing="6" border="1" width="100%" height="90" bgcolor="white">
-                            <form name="f" action="#" onsubmit="return false;"></form>
+              <div class="col-lg-5 mb-2">           
+                <div class="forca">
+                    <h2 id="dicas"></h2>                                    
+                        <div id="visor"> </div>                                                                      
+                        
+                        <table id="tecladao" cellpadding="3" cellspacing="6" border="1" width="100%" height="90" bgcolor="white"> 
+                            <form name="f" action="#" onsubmit='return false;'>
                                 <tbody>
-                                    <tr>
+                                    <tr>                                                  
                                         <td align="center" valign="middle" width="15">
                                             <input type="submit" name="A" onclick="jogar('A');document.f.A.style.display ='none';" class="teclado" value="A">
                                         </td>
-
+            
                                         <td align="center" valign="middle" width="15">
                                             <input type="submit" name="B" onclick="jogar('B');document.f.B.style.display ='none';" class="teclado" value="B">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="C" onclick="jogar('C');document.f.C.style.display ='none';" class="teclado" value="C">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="D" onclick="jogar('D');document.f.D.style.display ='none';" class="teclado" value="D">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="E" onclick="jogar('E');document.f.E.style.display ='none';" class="teclado" value="E">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+                                        
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="F" onclick="jogar('F');document.f.F.style.display ='none';" class="teclado" value="F">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+                                        
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="G" onclick="jogar('G');document.f.G.style.display ='none';" class="teclado" value="G">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+                                        
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="H" onclick="jogar('H');document.f.H.style.display ='none';" class="teclado" value="H">
                                         </td>
                                     </tr>
-
+            
                                     <tr style="border: 1px #000000;">
-                                        <td align="center" valign="middle" width="15">
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="I" onclick="jogar('I');document.f.I.style.display ='none';" class="teclado" value="I">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="J" onclick="jogar('J');document.f.J.style.display ='none';" class="teclado" value="J">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="K" onclick="jogar('K');document.f.K.style.display ='none';" class="teclado" value="K">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="L" onclick="jogar('L');document.f.L.style.display ='none';" class="teclado" value="L">
                                         </td>
-
+            
                                         <td align="center" valign="middle" width="15">
                                             <input type="submit" name="M" onclick="jogar('M');document.f.M.style.display ='none';" class="teclado" value="M">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="N" onclick="jogar('N');document.f.N.style.display ='none';" class="teclado" value="N">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="O" onclick="jogar('O');document.f.O.style.display ='none';" class="teclado" value="O">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="P" onclick="jogar('P');document.f.P.style.display ='none';" class="teclado" value="P">
                                         </td>
                                     </tr>
-
+            
                                     <tr style="border: 1px #000000;">
-                                        <td align="center" valign="middle" width="15">
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="Q" onclick="jogar('Q');document.f.Q.style.display ='none';" class="teclado" value="Q">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="R" onclick="jogar('R');document.f.R.style.display ='none';" class="teclado" value="R">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="S" onclick="jogar('S');document.f.S.style.display ='none';" class="teclado" value="S">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="T" onclick="jogar('T');document.f.T.style.display ='none';" class="teclado" value="T">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="U" onclick="jogar('U');document.f.U.style.display ='none';" class="teclado" value="U">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="V" onclick="jogar('V');document.f.V.style.display ='none';" class="teclado" value="V">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="W" onclick="jogar('W');document.f.W.style.display ='none';" class="teclado" value="W">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="X" onclick="jogar('X');document.f.X.style.display ='none';" class="teclado" value="X">
                                         </td>
                                     </tr>
-
+            
                                     <tr style="border: 1px #000000;">
-                                        <td align="center" valign="middle" width="15">
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="Y" onclick="jogar('Y');document.f.Y.style.display ='none';" class="teclado" value="Y">
                                         </td>
-
-                                        <td align="center" valign="middle" width="15">
+            
+                                        <td align="center" valign="middle" width="15"> 
                                             <input type="submit" name="Z" onclick="jogar('Z');document.f.Z.style.display ='none';" class="teclado" value="Z">
                                         </td>
                                     </tr>
-                                </tbody>                    
-                        </table>
-                    </div>
+                                </tbody>
+                            </form>
+                        </table>                    
                 </div>
+              </div>
 
-                <div class="col-lg-6">
-                    <div class="divBoneco">
-                        <div id="DIVCORPO">
-                            <div id="forca">
-                                <div id="CHAPEU"></div>
-                                <div id="CABECA">
-                                    <div id="ABA"></div>
-                                    <!--p id="ROSTO">(°&#662;°)</p-->
-                                    <div id="BOCA"></div>
-                                    <div id="QUEIXO"></div>
-                                    <div id="PESCOCO"></div>
-                                </div>
-
-                                <div id="TRONCO">
-                                    <!--h4 id="enforcadoFrase">enforcado</h4-->
-                                    <div id="BRACOD1">
-                                        <div id="BRACOD2">
-                                            <div id="MAOD"></div>
-                                        </div>
-                                    </div>
-                                    <div id="BRACOE1">
-                                        <div id="BRACOE2">
-                                            <div id="MAOE"></div>
-                                        </div>
-                                    </div>
-                                    <div id="COXAD">
-                                        <div id="PERNAD">
-                                            <div id="PED"></div>
-                                        </div>
-                                    </div>
-                                    <div id="COXAE">
-                                        <div id="PERNAE">
-                                            <div id="PEE"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h1 id="h01"></h1>
+              <div class="col-lg-6">
+                <div class="divBoneco">
+                    <div id="DIVCORPO">
+                        <div id="forca">
+                            <div id="CHAPEU"></div>
+                            <div id="CABECA">
+                            <div id="ABA"></div>
+                            <!--p id="ROSTO">(°&#662;°)</p-->
+                            <div id="BOCA"></div>
+                            <div id="QUEIXO"></div>
+                            <div id="PESCOCO"></div>
                             </div>
-
-                            <h1 id="h02"></h1>
-                            <p id="h99"></p>
-                            <h2 id="msgGanhou">Parabéns, você ganhou!</h2>
-                            <h2 id="msgPerdeu">Que pena, você perdeu!</h2>
-                            <h4 id="palavraSec"></h4>
-                            <div style="width: 100%; display: flex; justify-content: center;">
-                                <button id="newGame" onclick="window.location.reload( false );">Novo Jogo</button>
+                     
+                            <div id="TRONCO"> <h4 id="enforcadoFrase">enforcado</h4>
+                            <div id="BRACOD1"><div id="BRACOD2"><div id="MAOD"></div></div></div>
+                            <div id="BRACOE1"><div id="BRACOE2"><div id="MAOE"></div></div></div>
+                            <div id="COXAD"><div id="PERNAD"><div id="PED"></div></div></div>
+                            <div id="COXAE"><div id="PERNAE"><div id="PEE"></div></div></div>
                             </div>
+                            <h1 id="h01"></h1>
+                        </div>
+
+                        <h1 id="h02"></h1>
+                        <p id="h99"></p>
+                        <h2 id="msgGanhou">Parabéns, você ganhou!</h2>
+                        <h2 id="msgPerdeu">Que pena, você perdeu!</h2>
+                        <h4 id="palavraSec"></h4>
+                        <div style="width: 100%; display: flex; justify-content: center;">
+                            <button id="newGame" onclick='window.location.reload( false );'>Novo Jogo</button>
                         </div>
                     </div>
                 </div>
+              </div>            
             </div>
 
             <div class="row">
                 <div class="col-lg-5">
                     <div class="divPlayer">
-                        <table id="tablePlayerTitle">
-                            <tr>
+                            <table id="tablePlayerTitle">
                                 <td>
                                     <input type="radio" name="player" id="equipe" onclick="listaJogadores()">
-                                    <p>Jogar em equipe/individual</p>
+                                    <p>Jogar em equipe/individual</p>                                 
                                 </td>
 
                                 <td>
                                     <input type="radio" name="player" id="individual" onclick="fecharLista()">
                                     <p>Fechar lista</p>
                                 </td>
-                            </tr>
-                        </table>
+                            </table>
 
-                        <!------------------------------------------>
+                                <!------------------------------------------>
 
-                        <p align="left" id="titlePont">NOME EQUIPE - JOGADOR / PONTUAÇÃO</p>
-                        <table id="tablePlayerPont">
-                            <tr>
-                                <td> </td>
-                            </tr>
-                        </table>
-                        <button id="btnAddMais" onclick="adcElemento()">add mais</button>
+                            <p align="left" id="titlePont">NOME EQUIPE - JOGADOR / PONTUAÇÃO</p>
+                            <table id="tablePlayerPont">                              
+                                <tr>
+                                    <td>  </td>
+                                </tr>                                                 
+                            </table>
+                            <button id="btnAddMais" onclick="adcElemento()">add mais</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+</body>
 <!-- Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -235,4 +220,4 @@
 
 <script src="js/forca.js"></script>
 
-</body></html>
+</html>
