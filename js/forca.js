@@ -148,7 +148,7 @@ function sorteio()
         BorderTable = BorderTable + "</tr></table><br>";
         visor.innerHTML = BorderTable;
         dicas.innerHTML = "Dica: " + dica[iconte];
-        document.getElementById('palavraSec').innerHTML = "Palavra é: " + palavras[iconte];
+        document.getElementById('palavraSec').innerHTML = "Palavra é: " + palavras[iconte].toUpperCase();
 		tempodejogo();
 }
 /*
