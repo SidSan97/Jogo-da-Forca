@@ -260,14 +260,17 @@ function jogar(letra){
         verificaerro();
         erroSim = 0;
      }
-   	   t = t + "</tr></table><br>";
-  	   visor.innerHTML = t;
+   	    t = t + "</tr></table><br>";
+        visor.innerHTML = t;
+        var temp = document.getElementById('tempJogo');
+        temp.innerHTML = "Tempo de jogo foi de " + itempodejogo + " segundos";
 	   
      if(coleta == palavras[iconte].toUpperCase()){
 
         document.getElementById('msgGanhou').style.display = 'block';
         document.getElementById('newGame').style.display = 'block';
         document.getElementById('palavraSec').style.display = 'block';
+        temp.style.display = 'block';
      }
 }   
 

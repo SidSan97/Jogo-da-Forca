@@ -95,6 +95,13 @@ tbody td
    display: none;
 }
 
+#tempJogo
+{
+   display: none;
+   color: rgb(207, 43, 43);
+   font-weight: 700;
+}
+
 #newGame
 {
    color: blanchedalmond;
