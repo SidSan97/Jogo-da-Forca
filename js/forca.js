@@ -104,7 +104,7 @@ function adcElemento () {
     novoElem2.appendChild(input);
     novoElem2.appendChild(select);
 
-    for(let i=0; i<10; i++)
+    for(let i=0; i<=13; i++)
     {
         num = num + 1;
         var option = document.createElement('option');
