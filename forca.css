@@ -110,6 +110,7 @@ tbody td
    color: #F00;
    display: none;
    position: relative;
+   z-index: 999;
 }
 
 #DIVCORPO {
