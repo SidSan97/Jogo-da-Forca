@@ -174,35 +174,42 @@ function verificaerro(){
        document.getElementById('QUEIXO').style.display = "block";
        document.getElementById('BOCA').style.display = "block";
        document.getElementById('PESCOCO').style.display = "block";
+       musicaErrou();
         break
     case 2:
         document.getElementById('TRONCO').style.display = "block";
+        musicaErrou();
         break
     case 3:
         document.getElementById('BRACOD1').style.display = "block";
         document.getElementById('BRACOD2').style.display = "block";
         document.getElementById('MAOD').style.display = "block";
+        musicaErrou();
         break
     case 4:
         document.getElementById('BRACOE1').style.display = "block";
         document.getElementById('BRACOE2').style.display = "block";
         document.getElementById('MAOE').style.display = "block";
+        musicaErrou();
         break
     case 5:
         document.getElementById('COXAD').style.display = "block";
         document.getElementById('PERNAD').style.display = "block";
         document.getElementById('PED').style.display = "block";
+        musicaErrou();
         break
     case 6:
         document.getElementById('COXAE').style.display = "block";
         document.getElementById('PERNAE').style.display = "block";
         document.getElementById('PEE').style.display = "block";
+        musicaErrou();
         break
     default:
         document.getElementById('msgPerdeu').style.display = 'block';
         document.getElementById('enforcadoFrase').style.display = 'block';
         document.getElementById('newGame').style.display = 'block';
         document.getElementById('palavraSec').style.display = 'block';
+        musicaPerdeu();
   }
         erro++;		
 }
@@ -216,6 +223,27 @@ function verificaerro(){
 	  existe a letra na palavra sorteada; 
           -------------------    					
 */
+
+//MUSICA TOCADA APÓS GAME OVER
+function musicaPerdeu(){
+    let songPerdeu = new Audio()
+    songPerdeu.src = "sons/perdeu.mp3";
+    songPerdeu.play();
+}
+
+//MUSICA TOCADA APÓS GANHAR O JOGO
+function musicaGanhou(){
+    let songGanhou = new Audio()
+    songGanhou.src = "sons/aplausos.mp3";
+    songGanhou.play();
+}
+
+//MUSICA TOCADA AO ERRAR UMA LETRA
+function musicaErrou(){
+    let songErrou = new Audio()
+    songErrou.src = "sons/erro.mp3";
+    songErrou.play();
+}
 
 function jogar(letra){
    var nome = palavras[iconte].toUpperCase();
@@ -271,6 +299,7 @@ function jogar(letra){
         document.getElementById('newGame').style.display = 'block';
         document.getElementById('palavraSec').style.display = 'block';
         temp.style.display = 'block';
+        musicaGanhou();
      }
 }   
 
