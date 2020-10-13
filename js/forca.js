@@ -211,7 +211,9 @@ function verificaerro(){
         document.getElementById('palavraSec').style.display = 'block';
         musicaPerdeu();
   }
-        erro++;		
+        erro++;	
+	list.splice(palavras[iconte], 1);
+
 }
 /*
 -------------------
@@ -300,6 +302,8 @@ function jogar(letra){
         document.getElementById('palavraSec').style.display = 'block';
         temp.style.display = 'block';
         musicaGanhou();
+	list.splice(palavras[iconte], 1);
+
      }
 }   
 
