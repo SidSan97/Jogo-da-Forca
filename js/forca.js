@@ -8,21 +8,21 @@
 */
 
   //  BIBLIOTECA DE PALAVRAS  
-  var palavras = new Array();
-  palavras[0]  = "carteira";
-  palavras[1]  = "brasil";
-  palavras[2]  = "sidnei";
-  palavras[3]  = "bahia";
-  palavras[4]  = "salvador";
-  palavras[5]  = "assembly";
-  palavras[6]  = "marco";
-  palavras[7]  = "helio";
-  palavras[8]  = "exodo";
-  palavras[9]  = "milan";
-  palavras[10] = "verao";
-  palavras[11] = "ysmine";
-  palavras[12] = "windows";
-  palavras[13] = "ufba";
+    var palavras = new Array();
+        palavras[0]  = "carteira";
+        palavras[1]  = "brasil";
+        palavras[2]  = "sidnei";
+        palavras[3]  = "bahia";
+        palavras[4]  = "salvador";
+        palavras[5]  = "assembly";
+        palavras[6]  = "marco";
+        palavras[7]  = "helio";
+        palavras[8]  = "exodo";
+        palavras[9]  = "milan";
+        palavras[10] = "verao";
+        palavras[11] = "ysmine";
+        palavras[12] = "windows";
+        palavras[13] = "ufba";
     
     //BIBLIOTECAS COM AS DICAS
     var dica = new Array();
@@ -49,9 +49,9 @@
     var erro = 1;
     var iconte = Math.floor(Math.random()*13);
     var ki = new Array(palavras[iconte].length);
-    var kk = new Array(dica[iconte])
-      // adicinando adicionar o valor "__" 
-	//no vetor que armazena a palavra sorteada;
+    var kk = new Array(dica[iconte]);
+
+      // adicinando adicionar o valor "__" no vetor que armazena a palavra sorteada;
 	var itempodejogo = 0;
     for(k=0;k<palavras[iconte].length;k++){
 
@@ -161,7 +161,7 @@ function sorteio()
           -------------------    
 */
 function verificaerro(){
-   var m = document.getElementById('g');
+   //var m = document.getElementById('g');
 
    switch (erro){
     case 0:
@@ -210,10 +210,10 @@ function verificaerro(){
         document.getElementById('newGame').style.display = 'block';
         document.getElementById('palavraSec').style.display = 'block';
         musicaPerdeu();
+        palavras.splice(palavras[iconte], 1);
+        dicas.splice(dicas[iconte], 1);
   }
         erro++;	
-	list.splice(palavras[iconte], 1);
-
 }
 /*
 -------------------
@@ -302,8 +302,8 @@ function jogar(letra){
         document.getElementById('palavraSec').style.display = 'block';
         temp.style.display = 'block';
         musicaGanhou();
-	list.splice(palavras[iconte], 1);
-
+        palavras.splice(palavras[iconte], 1);
+        dicas.splice(dicas[iconte], 1);
      }
 }   
 
